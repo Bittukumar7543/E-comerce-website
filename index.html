@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Card</title>
+</head>
+<style>
+     *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+     }
+     .container{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        height:100vh;
+        background-color:bisque;
+     }
+     .card{
+        width:350px;
+        height:500px;
+     }
+     .card-image{
+        width:350px;
+        height:350px;
+        background-color:coral;
+     }
+     .card-image img{
+        width:350px;
+        height:350px;
+        object-fit:cover;
+     }
+     .card-body{
+        height:175px;
+        background-color: pink;
+     }
+     .card-body .s1{
+        display:flex;
+        justify-content:space-between;
+     }
+     .card-body .s1 .details{
+         font-family:'Courier New', Courier, monospace;
+         margin:25px 0px 0px 25px;
+     }
+     .card-body .s1 .details h4{
+        font-size:20px;
+        font-weight:500;
+     }
+     .card-body .s1 .details h6{
+        font-size:14px;
+        font-weight: 500;
+     }
+     .card-body .s1 .price {
+        margin:25px 0px 0px 25px;
+        display:inner-block;
+        font-size:19px;
+        color:rgb(255,0,76);
+        font-family:'Courier New', Courier, monospace;
+     }
+     .card-body .s2{
+      display:flex;
+      justify-content: space-between;
+     }
+     .card-body .s2 number{
+      font-family: 'Courier New', Courier, monospace;
+      margin:30px 10px 0px 25px;
+     }
+     .card-body .s2 .number label{
+      margin: 5px 0px 0px 20px;
+      padding:4px;
+     }
+     .card-body .s2 .number label:nth-child(1){
+      background: beige;
+     }
+     .card-body .s2 .number label:hover{
+      background:beige;
+     }
+     .card-body .s2 .color-option span{
+      width:17px;
+      height:17px;
+      display:inline-block;
+      margin:30px 5px 0px 0px;
+      border-radius:50%;
+     }
+     .card-body .s2 .color-option span:nth-child(1){
+      background:rgb(249,48,48);
+     }
+     .card-body .s2 .color-option span:nth-child(2){
+      background:rgb(174,255,244);
+     }
+     .card-body .s2 .color-option span:nth-child(1):hover{
+      border:1px solid white;
+     }
+     .card-body .s2 .color-option span:nth-child(2):hover{
+      border:1px solid rgb(211, 19, 35);
+     }
+
+     .card-body .s3{
+      display:flex;
+      justify-content:space-around;
+      margin-top:15px;
+     }
+     .card-body .s3 button{
+      font-family:'Courier New', Courier, monospace ;
+      outline:none;
+      border:none;
+      padding:6px 8px;
+      cursor:pointer;
+      background:#ffe8e1;
+     }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-image">
+                <img src="img.png" alt="shoe">
+             </div>
+             <div class="card-body">
+                <div class="s1">
+                    <div class="details">
+                        <h4>Nike shoe</h4>
+                        <h6>Air mark</h6>
+                    </div>
+                    <div class="price">
+                        <label>239,99$</label>
+                    </div>
+                </div>
+                <div class="s2">
+                  <div class="number">
+                     <label>38</label>
+                     <label>39</label>
+                     <label>40</label>
+                     <label>41</label>
+                  </div>
+                  <div class="color-option">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                  </div>
+                </div>
+                <div class="s3">
+                  <div class="chart">
+                     <button>Add to chart</button>
+                  </div>
+
+                  <div class="wishlist">
+                     <button>Add to wishlist</button>
+                  </div>
+                </div>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
